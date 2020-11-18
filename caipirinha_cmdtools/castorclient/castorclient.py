@@ -6,8 +6,10 @@ class CastorClient(object):
 
     def __init__(self):
         self.current_dir = os.path.abspath(os.path.curdir)
-        print(self.current_dir)
         # self.data = None
+
+    def print_current_dir(self):
+        print(self.current_dir)
 
     # def pwd(self):
     #     return self.current_dir

@@ -7,7 +7,8 @@ from tests.constants import *
 
 
 def test_castorclient_can_be_instantiated():
-    pass
+    client = CastorClient()
+    client.print_current_dir()
 
 
 def test_dhba_data_successfully_imported():
