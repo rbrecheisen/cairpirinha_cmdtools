@@ -19,7 +19,7 @@ setup_requirements = []
 
 test_requirements = []
 
-version = '0.5.0'
+version = '0.7.0'
 
 setup(
     author="Ralph Brecheisen",
