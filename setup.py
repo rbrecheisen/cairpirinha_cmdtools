@@ -1,8 +1,11 @@
 #!/usr/bin/env python
+import os
 
 """The setup script."""
 
 from setuptools import setup, find_packages
+
+os.system('rm -rf dist')
 
 with open('README.rst') as readme_file:
     readme = readme_file.read()
@@ -10,11 +13,13 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = ['pytest', 'cmd2', 'gnureadline', 'pydicom', 'pandas', 'numpy']
+requirements = ['pytest', 'cmd2', 'gnureadline', 'pydicom', 'pandas', 'numpy', 'SimpleITK']
 
 setup_requirements = []
 
 test_requirements = []
+
+version = '0.5.0'
 
 setup(
     author="Ralph Brecheisen",
@@ -43,6 +48,6 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/rbrecheisen/caipirinha_cmdtools',
-    version='0.1.0',
+    version=version,
     zip_safe=False,
 )
